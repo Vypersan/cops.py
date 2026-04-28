@@ -8,10 +8,10 @@ import requests
 
 
 
-base_api_uri = f"https://api-cops.criticalforce.fi/api/public"
+base_api_uri = f"https://default.prod.copsapi.criticalforce.fi/api/public/"
 
-username_api_uri = f"https://api-cops.criticalforce.fi/api/public/profile?usernames="
+username_api_uri = f"https://default.prod.copsapi.criticalforce.fi/api/public/profile?usernames="
 
-id_api_url  = f"https://api-cops.criticalforce.fi/api/public/profile?ids="
+id_api_url  = f"https://default.prod.copsapi.criticalforce.fi/api/public/profile?ids="
 
-servers_api_url = f"https://api-cops.criticalforce.fi/api/public/status/servers"
+servers_api_url = f"https://default.prod.copsapi.criticalforce.fi/api/public/status/servers"
