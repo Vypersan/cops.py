@@ -6,10 +6,10 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='copspy',
-    version='0.1',
+    version='0.2.1',
     long_description=long_description,
     long_description_content_type= "text/markdown",
-    description='a fan made python API wrapper for the c-ops public api',
+    description='A fan made python API wrapper for the c-ops public api',
     license='MIT',
     packages=['copspy/'],
     author='VyperSan',

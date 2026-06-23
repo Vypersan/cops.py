@@ -26,7 +26,7 @@ def get_player_by_ign(ign: str = None):
 
     
 
-def get_player_by_id(id: str = None):
+def get_player_by_id(id: int = None):
     """Get a profile and it's associated data like ID, xp, ranked stats, custom games stats."""
     headers = {
         "content-type": "application/json",

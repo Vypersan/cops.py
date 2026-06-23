@@ -1,11 +1,11 @@
 # cops.py
-copspy is a python API wrapper for the public version of the Critical Ops API.
+cops.py is a python API wrapper for the public version of the Critical Ops API.
 This project is not affiliated with c-ops, Critical Force, Critical Force Oy or any related company.
 This project is purely made for fun by the community and for the community.
 
 # Install:
 ```bash
-  python -m pip install u-copsapi
+  python -m pip install copspy
 ```
 
 # Import
