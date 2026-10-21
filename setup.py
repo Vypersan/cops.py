@@ -6,7 +6,7 @@ long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='copspy',
-    version='0.2.1',
+    version='0.2.2',
     long_description=long_description,
     long_description_content_type= "text/markdown",
     description='A fan made python API wrapper for the c-ops public api',

@@ -9,7 +9,6 @@ green = Fore.GREEN
 reset = Fore.RESET
 
 
-
 class ResponseNotOK(BaseException):
     def __init__(self, response_text):
         self.response_text = response_text
@@ -35,9 +34,45 @@ class PlayerNotFound(BaseException):
 
 class NoNetwork(BaseException):
 
-    def send_message():
-        return print (
+    def send_message(self):
+        return (
             red
             + f"[ERROR]    "
             + "Can not reach API. Please make sure you are connected to a network."
+            + reset
+        )
+
+
+class GenericError(BaseException):
+    def __init__(self, response_text):
+        self.response_text = response_text
+
+    def send_message(self):
+        return red + f"[ERROR]" + reset + f"An error occurred:\n {self.response_text}"
+
+
+
+class RateLimited(BaseException):
+    def __init__(self, response_text):
+        self.response_text = response_text
+
+    def send_message(self):
+        return (
+            red
+            + f"[ERROR]"
+            + reset
+            + f"Rate limit exceeded:\n {self.response_text}"
+        )
+
+
+class Unauthorized(BaseException):
+    def __init__(self, response_text):
+        self.response_text = response_text
+
+    def send_message(self):
+        return (
+            red
+            + f"[ERROR]"
+            + reset
+            + f"Unauthorized access:\n {self.response_text}"
         )
